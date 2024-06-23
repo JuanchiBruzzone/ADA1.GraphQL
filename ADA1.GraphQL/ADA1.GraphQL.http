@@ -1,0 +1,6 @@
+@ADA1.GraphQL_HostAddress = http://localhost:5189
+
+GET {{ADA1.GraphQL_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
