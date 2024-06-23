@@ -11,5 +11,8 @@ public class Query
         _personService = personService;
     }
 
-    public List<Person.Person> GetPeople(int count) => _personService.GetPeople(count);
+    public List<Person.Person> GetPeople(int count)
+    {
+        return _personService.GetPeople(count);
+    }
 }
