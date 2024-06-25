@@ -1,8 +1,11 @@
 using ADA1.GraphQL.Features.GraphQL;
 using ADA1.GraphQL.Features.Person;
+using ADA1.GraphQL.Features.Rng;
 using ADA1.GraphQL.Features.Tweet;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddTransient<RngService>();
 
 builder.Services.AddTransient<PersonService>();
 builder.Services.AddTransient<TweetService>();
